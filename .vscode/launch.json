@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Client/ApiClient/bin/Debug/net6.0/Kaylumah.ValidatedStronglyTypedIOptions.ApiClient.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Client/ApiClient",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Client/ConsoleClient/bin/Debug/net6.0/Kaylumah.ValidatedStronglyTypedIOptions.ConsoleClient.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Client/ConsoleClient",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
